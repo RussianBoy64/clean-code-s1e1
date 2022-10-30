@@ -127,7 +127,7 @@ li > .todo-input {
 }
 
 /* Completed */
-ul#complete-tasks-list label {
+ul#complete-task-list label {
   text-decoration: line-through
   color: #888;
 }

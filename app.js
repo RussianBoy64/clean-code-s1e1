@@ -8,9 +8,9 @@
 // Event handling, user interaction is what starts the code execution.
 
 var taskInput = document.getElementById('add-task') //Add a new task.
-var addButton = document.getElementsByTagName('button')[0] //first button
+var addButton = document.querySelector('.btn-add')
 var incompleteTaskHolder = document.getElementById('task-list') //ul of #incompleteTasks
-var completedTasksHolder = document.getElementById('complete-tasks-list') //completed-tasks
+var completedTasksHolder = document.getElementById('complete-task-list') //completed-tasks
 
 //New task list item
 var createNewTaskElement = function (taskString) {
@@ -34,6 +34,7 @@ var createNewTaskElement = function (taskString) {
 
   //Each elements, needs appending
   checkBox.type = 'checkbox'
+  checkBox.className = 'todo-complete'
   editInput.type = 'text'
   editInput.className = 'todo-input'
 
@@ -74,8 +75,8 @@ var editTask = function () {
 
   var listItem = this.parentNode
 
-  var editInput = listItem.querySelector('input[type=text]')
-  var label = listItem.querySelector('label')
+  var editInput = listItem.querySelector('.todo-input')
+  var label = listItem.querySelector('.todo-label')
   var editBtn = listItem.querySelector('.btn-edit')
   var containsClass = listItem.classList.contains('edit-mode')
   //If class of the parent is .editmode
@@ -137,7 +138,7 @@ addButton.addEventListener('click', ajaxRequest)
 var bindTaskEvents = function (taskListItem, checkBoxEventHandler) {
   console.log('bind list item events')
   //select ListItems children
-  var checkBox = taskListItem.querySelector('input[type=checkbox]')
+  var checkBox = taskListItem.querySelector('.todo-complete')
   var editButton = taskListItem.querySelector('.btn-edit')
   var deleteButton = taskListItem.querySelector('.btn-delete')
 
