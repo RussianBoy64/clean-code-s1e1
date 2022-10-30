@@ -130,7 +130,7 @@
 
 /* Edit Task */
 .task-list-item .todo-input {
-  display: none
+  display: none;
 }
 
 .task-list-item.edit-mode .todo-input {
