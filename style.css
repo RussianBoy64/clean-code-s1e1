@@ -37,14 +37,14 @@
 }
 
 #task-list, #complete-task-list {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 
 .todo-input,
 .todo-complete,
 .btn {
-  outline:none;
+  outline: none;
 }
 
 .btn {
@@ -130,14 +130,14 @@
 
 /* Edit Task */
 .task-list-item .todo-input {
-  display:none
+  display: none
 }
 
 .task-list-item.edit-mode .todo-input {
-  display:inline-block;
+  display: inline-block;
   flex-grow: 1;
 }
 
 .task-list-item.edit-mode .todo-label {
-  display:none;
+  display: none;
 }
