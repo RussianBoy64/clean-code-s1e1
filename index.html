@@ -8,18 +8,18 @@
 </head>
 
 <body class="body">
-  <div class="matrix">
+  <aside class="matrix">
     <img class="matrix-img" src="./eisenhower-matrix.jpg">
     <a class="matrix-link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-  </div>
-  <div class="todo">
-    <p id="todo-add-task">
+  </aside>
+  <main class="todo">
+    <div id="todo-add-task">
       <label class="todo-title" for="add-task">Add item</label>
-    <div class="add-task-wrapper">
-      <input id="add-task" class="todo-input" type="text">
-      <button class="btn btn-add">Add</button>
+      <div class="add-task-wrapper">
+        <input id="add-task" class="todo-input" type="text">
+        <button class="btn btn-add">Add</button>
+      </div>
     </div>
-    </p>
     <h3 class="todo-title">Todo</h3>
     <ul id="task-list">
       <li class="task-list-item">
@@ -28,7 +28,7 @@
         <input type="text" class="todo-input">
         <button class="btn btn-edit">Edit</button>
         <button class="btn btn-delete">
-          <img src="./remove.svg">
+          <img class="btn-delete-icon" src="./remove.svg" alt="remove icon">
         </button>
       </li>
       <li class="task-list-item edit-mode">
@@ -53,7 +53,7 @@
         </button>
       </li>
     </ul>
-  </div>
+  </main>
   <script src="app.js"></script>
 </body>
 

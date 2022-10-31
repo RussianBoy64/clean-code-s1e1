@@ -5,6 +5,8 @@
   font-family: Lato, sans-serif;
 }
 
+ /* Aside  */
+
 .matrix {
   width: 500px;
   margin: 0 auto;
@@ -27,6 +29,8 @@
 
 }
 
+/* Main */
+
 .todo {
   width: 500px;
   margin: 0 auto 0;
@@ -34,6 +38,7 @@
 
 .add-task-wrapper {
   display: flex;
+  margin: 20px 0;
 }
 
 #task-list,
